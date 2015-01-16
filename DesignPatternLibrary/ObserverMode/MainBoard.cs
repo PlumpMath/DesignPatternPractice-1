@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternLibrary
+namespace DesignPatternLibrary.ObserverMode
 {
-    public class Class1
+    public class MainBoard:IObserver , IDisplayData 
     {
+
     }
 }
