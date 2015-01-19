@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DesignPatternLibrary.ObserverMode
 {
-    public class MainBoard:IObserver
+    public class SubBoard1: IObserver
     {
         private StockData stock;
         private string StockName;
         private int StockCount;
         private double StockPrice;
 
-        public MainBoard(StockData myStock)
+        public SubBoard1(StockData myStock)
         {
             stock = myStock;
             stock.registerObserver(this);
@@ -28,9 +28,7 @@ namespace DesignPatternLibrary.ObserverMode
         public string dispResult()
         {
             string dispText = "";
-            dispText = "<h2>";
-            dispText += "MainBoard" + "StockName:" + StockName + "StockCount:" + StockCount.ToString() + "StockPrice:" + StockPrice.ToString();
-            dispText += "</h2>";
+            dispText = "SubBoard1" + "StockName:" + StockName + "StockCount:" + StockCount.ToString() + "StockPrice:" + StockPrice.ToString();
             return dispText;
         }
 

@@ -9,6 +9,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
+        <asp:DropDownList ID="ddlDemoList" runat="server"></asp:DropDownList>  
+        <asp:Button ID="btnRun" runat="server" Text="Run" OnClick="btnRun_Click" />
+        <asp:Label ID="lblResult" runat="server" Text=" "></asp:Label>
     <div>
     
     </div>

@@ -8,8 +8,11 @@ namespace DesignPatternLibrary.ObserverMode
 {   
     public interface ISubject
     {
-        public void registerObserver(IObserver o);
-        public void removeObserver(IObserver o);
-        public void notifyObservers();
+//        public void registerObserver(IObserver o);
+//        public void removeObserver(IObserver o);
+//        public void notifyObservers();
+        void registerObserver(IObserver o);
+        void removeObserver(IObserver o);
+        void notifyObservers();
     }
 }
