@@ -9,12 +9,31 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <asp:DropDownList ID="ddlDemoList" runat="server"></asp:DropDownList>  
-        <asp:Button ID="btnRun" runat="server" Text="Run" OnClick="btnRun_Click" />
-        <asp:Label ID="lblResult" runat="server" Text=" "></asp:Label>
-    <div>
-    
-    </div>
+        <div id="SelectPattern">
+            <asp:DropDownList ID="ddlDemoList" runat="server" AutoPostBack="True"></asp:DropDownList>  
+            <asp:Button ID="btnRun" runat="server" Text="Run" OnClick="btnRun_Click" />
+        </div>
+        <asp:Panel ID="pnlDecorator" runat="server" Visible="False">
+            <div>
+                <span>飲料類型</span>
+                <asp:RadioButtonList runat="server" ID="beverageType" AutoPostBack="True" RepeatColumns="3" OnSelectedIndexChanged="beverageType_SelectedIndexChanged">
+                    <asp:ListItem Text="Coffee" Value="C"></asp:ListItem>
+                    <asp:ListItem Text="Soymilk" Value="S"></asp:ListItem>
+                    <asp:ListItem Text="Tea" Value="T"></asp:ListItem>
+                </asp:RadioButtonList>
+            </div>
+            <div>
+                <span>配料</span>
+                <asp:CheckBoxList runat="server" ID="toppingList" RepeatColumns="3" >
+                    <asp:ListItem Text="Caramel" Value="C"></asp:ListItem>
+                    <asp:ListItem Text="Cream" Value="D"></asp:ListItem>
+                    <asp:ListItem Text="Whip" Value="W"></asp:ListItem>
+                </asp:CheckBoxList>
+            </div>
+        </asp:Panel>
+        <div>
+            <asp:Label ID="lblResult" runat="server" Text=" "></asp:Label>    
+        </div>
     </form>
 </body>
 </html>

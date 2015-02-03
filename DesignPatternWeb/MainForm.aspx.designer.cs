@@ -40,6 +40,33 @@ namespace DesignPatternWeb {
         protected global::System.Web.UI.WebControls.Button btnRun;
         
         /// <summary>
+        /// pnlDecorator 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlDecorator;
+        
+        /// <summary>
+        /// beverageType 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList beverageType;
+        
+        /// <summary>
+        /// toppingList 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 將移動欄位宣告從設計檔案修改為程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBoxList toppingList;
+        
+        /// <summary>
         /// lblResult 控制項。
         /// </summary>
         /// <remarks>
